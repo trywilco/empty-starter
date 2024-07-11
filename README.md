@@ -20,25 +20,15 @@ The project has the following files and directories:
 
 To run the FastAPI server using Docker, follow these steps:
 
-1. Make sure you have Docker installed on your machine.
+- Build and start the Docker containers by running the following command:
 
-2. Clone this repository.
+  ```shell
+  docker compose up
+  ```
 
-3. Navigate to the `python-server` directory.
+  This command will build the Docker image for the FastAPI server and start the containers defined in the `docker-compose.yml` file.
 
-4. Build the Docker image by running the following command:
-
-   ```shell
-   docker build -t python-server .
-   ```
-
-5. Start the Docker containers by running the following command:
-
-   ```shell
-   docker-compose up
-   ```
-
-6. The FastAPI server should now be running. You can access it at `http://localhost:8000`.
+- The FastAPI server should now be running. You can access it at `http://localhost:8000`.
 
 ## API Routes
 
@@ -47,16 +37,3 @@ The FastAPI server provides the following API routes:
 - `POST /tasks`: Adds a task to the task list. The request body should contain the task details.
 
 - `GET /tasks`: Retrieves the task list.
-
-Please refer to the API documentation for more details on the request and response formats.
-
-## Dependencies
-
-The FastAPI server has the following dependencies:
-
-- FastAPI: A modern, fast (high-performance) web framework for building APIs with Python.
-
-- Other dependencies listed in the `requirements.txt` file.
-
-```
-This README.md file provides an overview of the project structure, instructions for running the server using Docker, information about the API routes, and the dependencies used in the project.
