@@ -1,9 +1,9 @@
 services:
   python-server:
     build:
-      context: ./server
+      context: ./python-server
       dockerfile: Dockerfile
     ports:
       - 8000:8000
     volumes:
-      - ./server:/app
+      - ./python-server:/app
