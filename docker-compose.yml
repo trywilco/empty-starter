@@ -1,0 +1,10 @@
+version: "3"
+services:
+  python-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./server:/app
