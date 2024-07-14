@@ -4,6 +4,10 @@ app = FastAPI()
 
 tasks = []
 
+@app.get("/")
+def get_tasks():
+    return "Hello World"
+
 @app.post("/task")
 def add_task(task: str):
     tasks.append(task)
