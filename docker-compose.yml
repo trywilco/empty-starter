@@ -6,4 +6,4 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./python-server:/app
+      - ./python-server/src:/app/src
